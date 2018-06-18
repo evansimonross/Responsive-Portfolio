@@ -87,18 +87,19 @@ section{
     overflow: auto;
     width: 100%;
     border-top: solid 2px #ccc;
+    padding-bottom: 60px;
 }
 
 #content{
     background-color: #ffffff;
-    float: middle;
     width: 910px;
     margin: auto;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     border: solid 1px;
     border-color: #dddddd;
     padding: 25px;
+    overflow: auto;
 }
 
 footer{
@@ -144,6 +145,11 @@ p{
 .portfolio-item{
     margin-right: 35px;
     float: left;
+    width:240px;
+}
+
+.portfolio-img{
+    width: 100%;
 }
 
 .item-label{
@@ -158,4 +164,58 @@ p{
 
 #portfolio{
     height: 50%;
+}
+
+@media screen and (max-width: 980px) {
+	
+}
+
+@media screen and (max-width: 760px) {
+	
+}
+
+@media screen and (max-width: 640px) {
+    #navbar{
+        width:100%;
+        margin: 0px;
+    }
+    
+    #name{
+        width:100%;
+        text-align:center;
+        float: none;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    nav{
+        width:100%;
+        text-align:center;
+        float: none;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #content{
+        width:auto;
+        margin: 15px;
+        height: auto;
+    }
+
+    #pic{
+        float:none;
+        margin:0px;
+        margin-top:15px;
+        width:100%;
+    }
+
+    p{
+        margin:0px;
+        margin-top:15px;
+    }
+
+    .portfolio-item{
+        width:100%;
+        display:block;
+    }
 }
